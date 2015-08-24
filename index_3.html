@@ -5,7 +5,7 @@
     <title>demoAng_3</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="js/index_2.js"></script>
+    <script type="text/javascript" src="js/index_3.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-app="demoApp" ng-controller="mainController as main">
@@ -14,7 +14,7 @@
     <span class="age">{{main.persones.age}}</span>
     <span class="profession">{{main.persones.profession}}</span>
     <img ng-src="{{main.persones.car}}" alt="">
-    <button type="button" ng-click="main.toggleShow(main.isShow)">Please click to {{main.buttonLabel}}</button>
+    <button type="button" ng-show="main.persones.history" ng-click="main.toggleShow(main.isShow)">Please click to {{main.buttonLabel}}</button>
     <p ng-show="main.isShow">{{main.persones.history}}</p>
 </body>
 </html>
