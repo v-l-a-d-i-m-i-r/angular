@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demoAngular</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="demoApp" ng-controller="mainController">
+    <h1>Classic style</h1>
+    <span class="name">{{persones.name}}</span>
+    <span class="age">{{persones.age}}</span>
+    <span class="profession">{{persones.profession}}</span>
+    <img ng-src="{{persones.car}}" alt="">
+    <button type="button" ng-click="toggleShow(isShow)">Please click to {{buttonLabel}}</button>
+    <p ng-show="isShow">{{persones.history}}</p>
+</body>
+</html>
